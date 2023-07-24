@@ -9,6 +9,6 @@ entries:
     name: architect-challenge
     type: application
     urls:
-    - https://github.com/harness-community/cd-arch-helm-challenge/releases/download/architect-challenge-1.0.0/architect-challenge-1.0.0.tgz
+    - https://github.com/harness-community/cd-arch-helm-challenge/releases/download/cd-arch-helm-challenge-1.0.0/cd-arch-helm-challenge-1.0.0.tgz
     version: 1.0.0
 generated: "2023-07-24T18:29:07.904121602Z"
