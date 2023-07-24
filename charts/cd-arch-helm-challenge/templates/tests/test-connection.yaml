@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "cd-arch-helm-challenge.fullname" . }}-test-connection"
+  labels:
+    {{- include "cd-arch-helm-challenge.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "cd-arch-helm-challenge.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
